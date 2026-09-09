@@ -96,7 +96,7 @@ Only the following columns are retained:
 * Units
 * variable_code
 
-The transformed data is saved as; **2023_year_finance.csv** inside the directory called "<b>*Transformed/*</b>".
+The transformed data is saved as; **2023_year_finance.csv** inside the directory called "<b>*Transformed/*</b> ".
 <br> <br>
 The script verifies that the transformed file exists and prints a confirmation message.
 
