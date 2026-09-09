@@ -59,3 +59,22 @@ The pipeline consists of three stages:
      ▼
    Gold/
 ```
+
+### Extract
+
+The pipeline downloads the Annual Enterprise Survey 2023 financial-year provisional dataset from the Stats NZ website.
+
+The dataset is downloaded into the raw directory.
+
+The source URL is stored in an environment variable rather than being hard-coded directly into the script.
+
+``` 
+   URL="https://www.stats.govt.nz/assets/Uploads/Annual-enterprise-survey/Annual-enterprise-survey-2023-financial-year-provisional/Download-data/annual-enterprise-survey-2023-financial-year-provisional.csv"
+   
+```
+ 
+ Then saved to a file called "survey_data.csv" in the raw folder
+
+ ```
+    curl -o raw/survey_data.csv "$URL"
+```
