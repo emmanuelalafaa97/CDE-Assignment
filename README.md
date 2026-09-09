@@ -11,7 +11,7 @@
  4. Transform the dataset by:
     i. Renaming Variable_code to variable_code
     ii. Selecting only the required columns:
-     `year, Value, Units, variable_code
+        year, Value, Units, variable_code
  5. Store the transformed dataset in a dedicated directory.
  6. Load the transformed dataset into a Gold directory.
  7. Schedule the ETL pipeline to run automatically every day at midnight.
@@ -121,11 +121,11 @@ All project files are version-controlled using Git.
 
 Git is used to track changes to:
 
- i. Bash scripts
- ii. README documentation
- iii. Configuration files
- iv. Project structure
- v. Other relevant project files
+ * Bash scripts
+ * README documentation
+ * Configuration files
+ * Project structure
+ * Other relevant project files
 
 Initialize the repository:
 ```
