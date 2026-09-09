@@ -88,8 +88,7 @@ The transformation performs two operations.
 
 The column: *Variable_code*  is renamed to: *variable_code*.
 
-2. Select required columns
-<br>
+2. Select required columns:<br>
 Only the following columns are retained:
 
 * year
@@ -97,9 +96,7 @@ Only the following columns are retained:
 * Units
 * variable_code
 
-The transformed data is saved as:
-
-**2023_year_finance.csv** inside the directory called *Transformed/*.
+The transformed data is saved as; **2023_year_finance.csv** inside the directory called "*Transformed/*".
 <br> <br>
 The script verifies that the transformed file exists and prints a confirmation message.
 
