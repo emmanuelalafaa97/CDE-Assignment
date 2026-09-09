@@ -196,3 +196,12 @@ Examples:
   git commit -m "Update project documentation"
 
 ```
+
+## Technologies Used
+* Bash:	ETL and file-management scripting
+* Linux :	Execution environment
+* curl / wget	: Downloading the source dataset
+* command-line tools : 	CSV transformation
+* Cron: Automated scheduling
+* Git	Version control
+* Stats NZ dataset :	Source data
