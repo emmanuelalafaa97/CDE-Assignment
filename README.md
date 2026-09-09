@@ -174,4 +174,5 @@ Examples:
   git commit -m "Add cron scheduling configuration"
   git commit -m "Add CSV and JSON file management script"
   git commit -m "Update project documentation"
+  
 ```
