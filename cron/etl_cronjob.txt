@@ -1,0 +1,3 @@
+# This is a showcase version of what the cronjob looks like
+
+0 0 * * * scripts/extract_script.sh
