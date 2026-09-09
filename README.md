@@ -78,7 +78,29 @@ The source URL is stored in an environment variable rather than being hard-coded
  ```
     curl -o raw/survey_data.csv "$URL"
 ```
+#### Transform
 
+After extraction, the pipeline transforms the raw dataset.
+
+The transformation performs two operations.
+
+1. Rename the column
+
+The column: *Variable_code*  is renamed to: *variable_code*
+2. Select required columns
+<br>
+Only the following columns are retained:
+
+* year
+* Value
+* Units
+* variable_code
+
+The transformed data is saved as:
+
+**2023_year_finance.csv** inside the directory Transformed/
+<br>
+The script verifies that the transformed file exists and prints a confirmation message.
 
 
 
