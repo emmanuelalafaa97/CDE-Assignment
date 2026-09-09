@@ -18,7 +18,7 @@
 
 ## Project Structure
 ```
- CoreDataEngineers/
+ ETL_Pipeline/
  ├── scripts/
  │   ├── extract_script.sh
  │   
