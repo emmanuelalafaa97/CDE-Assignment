@@ -9,8 +9,8 @@
  2. Extract a CSV dataset from an external URL.
  3. Store the raw dataset without modification.
  4. Transform the dataset by:
-    i. Renaming Variable_code to variable_code
-    ii. Selecting only the required columns:
+    * Renaming Variable_code to variable_code
+    * Selecting only the required columns:
         year, Value, Units, variable_code
  5. Store the transformed dataset in a dedicated directory.
  6. Load the transformed dataset into a Gold directory.
