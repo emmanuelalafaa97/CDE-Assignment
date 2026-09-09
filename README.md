@@ -1,4 +1,4 @@
-# CDE-Assignment
+# Creating an Extract Transform and Load pipeline with Linux scripts
 
 
 ## Project Objectives
