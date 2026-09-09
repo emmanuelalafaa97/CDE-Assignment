@@ -70,11 +70,107 @@ The source URL is stored in an environment variable rather than being hard-coded
 
 ``` 
    URL="https://www.stats.govt.nz/assets/Uploads/Annual-enterprise-survey/Annual-enterprise-survey-2023-financial-year-provisional/Download-data/annual-enterprise-survey-2023-financial-year-provisional.csv"
-   
+
 ```
  
  Then saved to a file called "survey_data.csv" in the raw folder
 
  ```
     curl -o raw/survey_data.csv "$URL"
+```
+
+
+
+
+2. Cron Job Scheduling
+
+The ETL pipeline is scheduled using the Linux cron scheduler.
+
+The requirement is for the pipeline to execute automatically every day at:
+
+12:00 AM
+
+The cron expression used is:
+
+```
+   0 0 * * *
+```
+
+This represents:
+
+Field	Value	Meaning
+Minute	0	At minute zero
+Hour	0	At midnight
+Day	*	Every day
+Month	*	Every month
+Weekday	*	Every day of the week
+
+Therefore:
+
+0 0 * * *
+
+means:
+
+Run the ETL pipeline every day at 12:00 AM.
+
+
+3. Git Version Control
+
+All project files are version-controlled using Git.
+
+Git is used to track changes to:
+
+Bash scripts
+README documentation
+Configuration files
+Project structure
+Other relevant project files
+
+Initialize the repository:
+```
+  git init
+```
+Check the repository status:
+```
+  git status
+```
+Add project files:
+```
+  git add .
+```
+Create the initial commit:
+```
+  git commit -m "Initial commit: add Bash ETL pipeline"
+```
+Additional changes can be tracked using:
+``` 
+  git add .
+  git commit -m "Update ETL pipeline and documentation"
+```
+### Recommended Git Workflow
+
+The project follows a simple Git workflow:
+```
+  Modify files
+       │
+       ▼
+  git status
+       │
+       ▼
+  git add .
+       │
+       ▼
+  git commit
+       │
+       ▼
+  Versioned project
+
+Commit messages should clearly describe the change being introduced.
+
+Examples:
+``` 
+  git commit -m "Add Bash ETL pipeline"
+  git commit -m "Add cron scheduling configuration"
+  git commit -m "Add CSV and JSON file management script"
+  git commit -m "Update project documentation"
 ```
