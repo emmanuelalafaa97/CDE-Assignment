@@ -33,7 +33,7 @@
  └── README.md
 ```
 
-1. ETL Pipeline
+### 1. ETL Pipeline
 
 The main ETL pipeline is implemented entirely using Bash scripting.
 
@@ -60,7 +60,7 @@ The pipeline consists of three stages:
    Gold/
 ```
 
-### Extract
+#### Extract
 
 The pipeline downloads the Annual Enterprise Survey 2023 financial-year provisional dataset from the Stats NZ website.
 
@@ -82,7 +82,7 @@ The source URL is stored in an environment variable rather than being hard-coded
 
 
 
-2. Cron Job Scheduling
+### 2. Cron Job Scheduling
 
 The ETL pipeline is scheduled using the Linux cron scheduler.
 
@@ -97,34 +97,35 @@ The cron expression used is:
 ```
 
 This represents:
-
-Field	Value	Meaning
-Minute	0	At minute zero
-Hour	0	At midnight
-Day	*	Every day
-Month	*	Every month
-Weekday	*	Every day of the week
+```
+  Field	Value	Meaning
+  Minute	0	At minute zero
+  Hour	0	At midnight
+  Day	*	Every day
+  Month	*	Every month
+  Weekday	*	Every day of the week
+```
 
 Therefore:
-
-0 0 * * *
-
+```
+  0 0 * * *
+```
 means:
+```
+ Run the ETL pipeline every day at 12:00 AM.
+```
 
-Run the ETL pipeline every day at 12:00 AM.
-
-
-3. Git Version Control
+### 3. Git Version Control
 
 All project files are version-controlled using Git.
 
 Git is used to track changes to:
 
-Bash scripts
-README documentation
-Configuration files
-Project structure
-Other relevant project files
+ i. Bash scripts
+ ii. README documentation
+ iii. Configuration files
+ iv. Project structure
+ v. Other relevant project files
 
 Initialize the repository:
 ```
