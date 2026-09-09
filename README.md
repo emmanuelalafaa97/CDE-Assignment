@@ -165,7 +165,7 @@ The project follows a simple Git workflow:
        │
        ▼
   Versioned project
-
+```
 Commit messages should clearly describe the change being introduced.
 
 Examples:
@@ -174,5 +174,5 @@ Examples:
   git commit -m "Add cron scheduling configuration"
   git commit -m "Add CSV and JSON file management script"
   git commit -m "Update project documentation"
-  
+
 ```
