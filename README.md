@@ -17,21 +17,21 @@
  7. Schedule the ETL pipeline to run automatically every day at midnight.
 
 ## Project Structure
-
-CoreDataEngineers/
-├── scripts/
-│   ├── extract_script.sh
-│   
-│
-├── cron/
-│   └── etl_cronjob
-│
-├── raw/
-├── Transformed/
-├── Gold/
-├── json_and_CSV/
-└── README.md
-
+``
+ CoreDataEngineers/
+ ├── scripts/
+ │   ├── extract_script.sh
+ │   
+ │
+ ├── cron/
+ │   └── etl_cronjob
+ │
+ ├── raw/
+ ├── Transformed/
+ ├── Gold/
+ ├── json_and_CSV/
+ └── README.md
+``
 
 1. ETL Pipeline
 
@@ -39,7 +39,7 @@ The main ETL pipeline is implemented entirely using Bash scripting.
 
 The pipeline consists of three stages:
 
-External CSV
+`` External CSV
      │
      ▼
   EXTRACT
@@ -58,3 +58,4 @@ External CSV
      │
      ▼
    Gold/
+``
